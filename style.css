@@ -1,0 +1,192 @@
+body{
+    background: grey; 
+    height: 90vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 25px;
+}
+
+.box{
+    box-sizing: border-box;    
+    position: relative;
+    background: #fff; 
+    width: 150px;
+    height: 150px;  
+}
+.el {
+    width: 150px;
+    height: 150px;     
+    transition: 0.5s;
+    position: absolute; 
+}
+img{
+    width: 100%;    
+}
+.el5{opacity: 0;}
+.box:hover .el1{
+    
+  animation: 0.5s elem1 forwards;
+   transition: .1s; 
+   z-index: 5;
+}
+.box:hover .el2{
+    animation: 0.5s elem2 forwards;
+    animation-delay: 0.5s;
+   transition: 0.2s;
+   z-index: 5;
+}
+.box:hover .el3{
+    animation: 0.5s elem3 forwards; 
+    animation-delay: 1s;
+   transition: 0.3s;
+   z-index: 5;
+}
+.box:hover .el4{
+    animation: 0.5s elem4 forwards; 
+    animation-delay: 1.5s;
+   transition: 0.2s;
+   z-index: 5;
+}
+.box:hover .el6{
+    animation: 0.5s elem6 forwards; 
+    animation-delay: 2s;
+   transition: 0.5s;
+   z-index: 5;
+}
+.box:hover .el7{
+    animation: 0.5s elem7 forwards;
+    animation-delay: 2.5s;
+   transition: 0.6s;
+   z-index: 5;
+}
+.box:hover .el8{
+    animation: 0.5s elem8 forwards; 
+    animation-delay: 3s;
+   transition: 0.7s;
+   z-index: 5;
+}
+.box:hover .el9{
+    animation: 0.5s elem9 forwards; 
+    animation-delay: 3.5s;
+   transition: 0.8s;
+   z-index: 5;
+}
+.box:hover .el5{ 
+    opacity: 1;
+   z-index: 15;
+}
+.el10{
+    background: #000;
+    z-index: 0;
+}
+@keyframes elem1{
+    0% {
+        transform: translate( 0px,0px);
+    }
+    50% {
+        transform: translate(-100%,0px);
+    }
+    100%{
+        transform: translate(-100%,-100%);
+    }
+}
+@keyframes elem3{
+    0% {
+        transform: translate( 0px,0px);
+    }
+    50% {
+        transform: translate(100%,0px);
+    }
+    100%{
+        transform: translate(100%,-100%);
+    }
+}
+@keyframes elem7{
+    0% {
+        transform: translate( 0px,0px);
+    }
+    50% {
+        transform: translate(-100%,0px);
+    }
+    100%{
+        transform: translate(-100%,100%);
+    }
+}
+@keyframes elem9{
+    0% {
+        transform: translate( 0px,0px);
+    }
+    50% {
+        transform: translate(100%,0px);
+    }
+    100%{
+        transform: translate(100%,100%);
+    }
+}
+@keyframes elem2{
+    0% {
+        transform: translate( 0px,0px);
+    } 
+    100%{
+        transform: translateY(-100%);
+    }
+}
+@keyframes elem4{
+    0% {
+        transform: translate( 0px,0px);
+    } 
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes elem6{
+    0% {
+        transform: translate( 0px,0px);
+    } 
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes elem8{
+    0% {
+        transform: translate( 0px,0px);
+    } 
+    100%{
+        transform: translateY(100%);
+    }
+}
+ 
+
+/* .el1{ 
+    background: #000;
+    z-index: 5; 
+}
+
+.el2{ 
+    background: red;
+}
+.el3{ 
+    background: blue;
+} 
+.el4{
+    background: green;
+}
+.el5{
+    background: yellow;
+}
+/* .el6{
+    background: brown;
+}
+.el7{
+    background: oldlace;
+}
+.el8{
+    background: orange;
+}
+.el9{
+    background: purple;
+}
+.el10{
+    background: springgreen;
+} */ */
